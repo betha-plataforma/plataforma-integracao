@@ -10,7 +10,7 @@ betha:
     oauth:
       client:
         id: "xxxxxxxxxxxxxxxxx"
-        secret_id: "3fdd79d3-a121-43a6-b2ce-1914372e8d24"
+        secret_id: "xxxxxxxxxxxxx"
         redirect: "http://localhost:8080/callback"
         scopes: "contas-usuarios.suite,user-accounts.suite"
   services:
