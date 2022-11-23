@@ -1,5 +1,4 @@
 # Plataforma Integração Demonstração
-
 Esse projeto tem como objetivo servir como base para integrações de Produtos de parceiros com a plataforma da Betha Sistemas.
 
 <br><br><br>
