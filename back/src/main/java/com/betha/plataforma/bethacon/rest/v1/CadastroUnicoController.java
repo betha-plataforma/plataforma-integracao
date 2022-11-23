@@ -1,4 +1,4 @@
-package com.betha.plataforma.bethacon.v1;
+package com.betha.plataforma.bethacon.rest.v1;
 
 import com.betha.plataforma.bethacon.model.cadastrounico.RecepcaoComando;
 import com.betha.plataforma.bethacon.service.ResponsavelService;

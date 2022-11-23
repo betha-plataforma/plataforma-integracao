@@ -1,4 +1,4 @@
-package com.betha.plataforma.bethacon.controller;
+package com.betha.plataforma.bethacon.rest.v1;
 
 import org.springframework.boot.actuate.health.HealthComponent;
 import org.springframework.boot.actuate.health.HealthEndpoint;

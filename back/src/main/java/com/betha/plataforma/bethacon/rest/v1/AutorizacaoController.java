@@ -1,4 +1,4 @@
-package com.betha.plataforma.bethacon.v1;
+package com.betha.plataforma.bethacon.rest.v1;
 
 import com.betha.plataforma.bethacon.auth.BethaAuthenticationHandler;
 import com.betha.plataforma.bethacon.auth.OauthToken;
