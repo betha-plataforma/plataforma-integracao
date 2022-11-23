@@ -20,14 +20,20 @@ Nessa aplicação de exemplo foi possuí o fluxo conhecido como Authorization co
 - O access token é armazenado na sessão (mas poderia ser utilizado qualquer outro mecanismo)
 - A cada requisição é verificado se o token não expirou, caso tenha sido expirado é iniciado um processo de renovação
 
+![](back/doc/img/autenticacao.png)
+
 Integração com API's do Tributos, para exemplo:
-- Consulta de imóveis
+- Consulta de Imóveis
 - Consulta de Contribuintes
 - Como header das requisições é utilizado authorization e userAccess, gerados com escopo especifico para o tributos
+
+![](back/doc/img/integracoes.png)
 
 CRUD de Responsáveis, para exemplo, como algo do domínio local da aplicação
 - Nela contém exemplos de envio de comando para o cadastro único
 - Webhook para receber comandos de Changes do cadastro único
+
+![](back/doc/img/cadastrounico.png)
 
 ## Executando a aplicação
 - Java 8 (ou superior)
