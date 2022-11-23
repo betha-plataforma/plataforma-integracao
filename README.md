@@ -13,7 +13,7 @@ principalmente por grandes players de plataforma, provendo acesso aos seus recur
 
 ## Implementação
 
-Nessa aplicação de exemplo foi possuí o fluxo conhecido como Authorization code, e as seguintes características podem ser observadas:
+**Nessa aplicação de exemplo foi possuí o fluxo conhecido como Authorization code, e as seguintes características podem ser observadas:**
 - Durante o login com a Betha, existe um redirecionamento do usuário
 - Após login com sucesso, é retornado para uma página da aplicação (callback) junto com um código de autorização
 - Esse código de autorização é trocado por um access token
@@ -21,15 +21,15 @@ Nessa aplicação de exemplo foi possuí o fluxo conhecido como Authorization co
 - A cada requisição é verificado se o token não expirou, caso tenha sido expirado é iniciado um processo de renovação
 
 ![](back/doc/img/autenticacao.png)
-
-Integração com API's do Tributos, para exemplo:
+<br><br><br>
+**Integração com API's do Tributos, para exemplo:**
 - Consulta de Imóveis
 - Consulta de Contribuintes
 - Como header das requisições é utilizado authorization e userAccess, gerados com escopo especifico para o tributos
 
 ![](back/doc/img/integracoes.png)
-
-CRUD de Responsáveis, para exemplo, como algo do domínio local da aplicação
+<br><br><br>
+**CRUD de Responsáveis, para exemplo, como algo do domínio local da aplicação:**
 - Nela contém exemplos de envio de comando para o cadastro único
 - Webhook para receber comandos de Changes do cadastro único
 
