@@ -1,0 +1,13 @@
+import { InjectionToken } from '@angular/core';
+import { OAuthApplication } from '@betha-plataforma/oauth';
+import { Usuario } from './usuario';
+import { Observable } from 'rxjs';
+export declare const OAUTH_APPLICATION: InjectionToken<OAuthApplication>;
+export declare class AutenticacaoContextService {
+    private oauthApplication;
+    constructor(oauthApplication: OAuthApplication);
+    logout(): void;
+    refreshToken(): Promise<any>;
+    readonly getInformacaoUsuario: () => Observable<Usuario>;
+    readonly getAccessToken: () => string;
+}

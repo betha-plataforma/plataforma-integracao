@@ -1,0 +1,8 @@
+{
+  "production": {
+    "envjs": "https://suite.cloud.betha.com.br/env.js"
+  },
+  "local": {
+    "envjs": "https://suite.cloud.betha.com.br/env.js"
+  }
+}

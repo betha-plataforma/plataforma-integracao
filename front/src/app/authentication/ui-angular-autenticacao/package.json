@@ -1,0 +1,33 @@
+{
+  "name": "@studio/ui-angular-autenticacao",
+  "version": "0.7.0",
+  "peerDependencies": {
+    "@angular/common": "^8.2.8",
+    "@angular/core": "^8.2.8",
+    "@betha-plataforma/oauth": "1.0.1"
+  },
+  "gitHead": "5b8f233973b7442390fbb9bd6ba3da7399ab3e57",
+  "main": "bundles/studio-ui-angular-autenticacao.umd.js",
+  "module": "fesm5/studio-ui-angular-autenticacao.js",
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/studio-ui-angular-autenticacao.js",
+  "es2015": "fesm2015/studio-ui-angular-autenticacao.js",
+  "esm5": "esm5/studio-ui-angular-autenticacao.js",
+  "esm2015": "esm2015/studio-ui-angular-autenticacao.js",
+  "fesm5": "fesm5/studio-ui-angular-autenticacao.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/studio-ui-angular-autenticacao.js",
+  "fesm2015": "fesm2015/studio-ui-angular-autenticacao.js",
+  "typings": "studio-ui-angular-autenticacao.d.ts",
+  "metadata": "studio-ui-angular-autenticacao.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  },
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "11.0.9",
+    "fesm2015": "11.0.9",
+    "typings": "11.0.9"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  }
+}

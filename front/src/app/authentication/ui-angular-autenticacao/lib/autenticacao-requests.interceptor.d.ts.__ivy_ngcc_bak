@@ -1,0 +1,13 @@
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { AutenticacaoContextService } from './autenticacao-context.service';
+export declare class AutenticacaoRequestsInterceptor implements HttpInterceptor {
+    private authenticationContextService;
+    private refreshTokenInProgress;
+    private tokenRefreshedSource;
+    private tokenRefreshedSource$;
+    constructor(authenticationContextService: AutenticacaoContextService);
+    intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>;
+    private refreshToken;
+    private addAuthRequest;
+}

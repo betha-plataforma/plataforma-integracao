@@ -1,0 +1,15 @@
+<bth-app #app>
+  
+  <bth-marca-produto slot="menu_marca_produto" produto="App Bethacon" exibir-produtos #marcaProduto> </bth-marca-produto>
+
+  <bth-utilitarios slot="menu_ferramentas" #utilitarios></bth-utilitarios>
+  <!-- <bth-ajuda slot="menu_ferramentas"></bth-ajuda> -->
+  <!-- <bth-novidades slot="menu_ferramentas" #novidades></bth-novidades> -->
+  <bth-notificacoes slot="menu_ferramentas" #notificacoes></bth-notificacoes>
+  <bth-conta-usuario slot="menu_ferramentas" usuario="lorem.ipsum" nome="Lorem Ipsum" foto-url="https://placeimg.com/80/80/animals" #contaUsuario> </bth-conta-usuario>
+
+  <main slot="container_aplicacao" class="container-fluid mt-2">
+    <router-outlet></router-outlet>
+  </main>
+
+</bth-app>

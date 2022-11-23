@@ -1,0 +1,1076 @@
+{
+    "offset": 0,
+    "limit": 20,
+    "total": 21,
+    "hasNext": true,
+    "content": [
+        {
+            "id": 21107811,
+            "codigo": 1,
+            "nome": "ADAO DUTRA DA SILVA",
+            "nomeSemEspolio": "ADAO DUTRA DA SILVA",
+            "cpfCnpj": "10388508000",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107811,
+                "pais": {
+                    "id": 29,
+                    "nome": "Brasil",
+                    "sigla2C": "BR",
+                    "sigla3C": "BRA",
+                    "sigla3D": "076",
+                    "codigoBacen": "1058"
+                },
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": "1948-06-18",
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Avenida Heraclides De Lima Gomes, 2519, QUADRA 17 - LOTE 73. - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.758",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21108291,
+            "codigo": 2,
+            "nome": "teste - teste - teste - teste",
+            "nomeSemEspolio": "teste - teste - teste - teste",
+            "cpfCnpj": null,
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21108291,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Avenida Heraclides De Lima Gomes - Centro - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:15.601",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107812,
+            "codigo": 3,
+            "nome": "ADROALDO VALERIO ANTONELLO",
+            "nomeSemEspolio": "ADROALDO VALERIO ANTONELLO",
+            "cpfCnpj": "33732517766631",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107812,
+                "pais": {
+                    "id": 29,
+                    "nome": "Brasil",
+                    "sigla2C": "BR",
+                    "sigla3C": "BRA",
+                    "sigla3D": "076",
+                    "codigoBacen": "1058"
+                },
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": {
+                "id": 21107812,
+                "nroRg": "4022772984",
+                "orgaoEmissorRg": null,
+                "dtEmissaoRg": null,
+                "estadoRg": null,
+                "nroRic": null,
+                "orgaoEmissorRic": null,
+                "dtEmissaoRic": null,
+                "estadoRic": null,
+                "pisPasep": null,
+                "dtEmissaoPisPasep": null
+            },
+            "pessoaJuridica": {
+                "id": 21107812,
+                "responsavel": null,
+                "isentoInscricao": null,
+                "inscricaoEstadual": null,
+                "orgaoRegistro": null,
+                "dtRegistro": null,
+                "nroRegistro": null,
+                "porteEmpresa": null,
+                "optanteSimples": {
+                    "descricao": "Sim",
+                    "valor": "SIM"
+                },
+                "optanteMei": {
+                    "descricao": "Sim",
+                    "valor": "SIM"
+                },
+                "qualificacao": null,
+                "naturezaJuridica": null
+            },
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Jurídica",
+                "valor": "JURIDICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Sim",
+                "valor": "SIM"
+            },
+            "enderecoPrincipalFormatado": "Rua Não informada, Rua : INTERIOR - ANEXO\"B\" - LOTE RURAL Nº 152 - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.79",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107813,
+            "codigo": 4,
+            "nome": "AYRTON ANTÔNIO ANTONELLO",
+            "nomeSemEspolio": "AYRTON ANTÔNIO ANTONELLO",
+            "cpfCnpj": "93299443020",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107813,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": "1954-05-14",
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": {
+                "id": 21107813,
+                "nroRg": "9061087749",
+                "orgaoEmissorRg": null,
+                "dtEmissaoRg": null,
+                "estadoRg": null,
+                "nroRic": null,
+                "orgaoEmissorRic": null,
+                "dtEmissaoRic": null,
+                "estadoRic": null,
+                "pisPasep": null,
+                "dtEmissaoPisPasep": null
+            },
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Não informada, Bairro : INTERIORRua : LOTE RURAL Nº 113 - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.799",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107814,
+            "codigo": 5,
+            "nome": "ALBERI GONCALVES JOAQUIM",
+            "nomeSemEspolio": "ALBERI GONCALVES JOAQUIM",
+            "cpfCnpj": "10036504068",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107814,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": "1947-03-31",
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": {
+                "id": 21107814,
+                "nroRg": "1032484501",
+                "orgaoEmissorRg": null,
+                "dtEmissaoRg": null,
+                "estadoRg": null,
+                "nroRic": null,
+                "orgaoEmissorRic": null,
+                "dtEmissaoRic": null,
+                "estadoRic": null,
+                "pisPasep": null,
+                "dtEmissaoPisPasep": null
+            },
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Não informada, INTERIOR - LOTE RURAL Nº 93 - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.809",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107815,
+            "codigo": 6,
+            "nome": "ALBERTO ANTONIO RODRIGUES",
+            "nomeSemEspolio": "ALBERTO ANTONIO RODRIGUES",
+            "cpfCnpj": "24474096053",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107815,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": "1951-09-28",
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": {
+                "id": 21107815,
+                "nroRg": "2007659366",
+                "orgaoEmissorRg": null,
+                "dtEmissaoRg": null,
+                "estadoRg": null,
+                "nroRic": null,
+                "orgaoEmissorRic": null,
+                "dtEmissaoRic": null,
+                "estadoRic": null,
+                "pisPasep": null,
+                "dtEmissaoPisPasep": null
+            },
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Avenida Heraclides De Lima Gomes, QUADRA 20 - LOTE 362. - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.836",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107816,
+            "codigo": 7,
+            "nome": "ALBINO PEGORARO",
+            "nomeSemEspolio": "ALBINO PEGORARO",
+            "cpfCnpj": "04692918004",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107816,
+                "pais": {
+                    "id": 29,
+                    "nome": "Brasil",
+                    "sigla2C": "BR",
+                    "sigla3C": "BRA",
+                    "sigla3D": "076",
+                    "codigoBacen": "1058"
+                },
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Não informada, 423, CEP 98035-140Bairro : BAIRRO BONINI IIRua : NICANO - Migração Desktop para Cloud",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.846",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107817,
+            "codigo": 8,
+            "nome": "ALCEU HANN ELICKER",
+            "nomeSemEspolio": "ALCEU HANN ELICKER",
+            "cpfCnpj": "60150890087",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107817,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Não informada, INTERIOR - SANTO IZIDRO - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.855",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107818,
+            "codigo": 9,
+            "nome": "ALCIDES JOAO PANOZZO",
+            "nomeSemEspolio": "ALCIDES JOAO PANOZZO",
+            "cpfCnpj": "04035330078",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107818,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": {
+                "id": 21107818,
+                "nroRg": "1026891621",
+                "orgaoEmissorRg": null,
+                "dtEmissaoRg": null,
+                "estadoRg": null,
+                "nroRic": null,
+                "orgaoEmissorRic": null,
+                "dtEmissaoRic": null,
+                "estadoRic": null,
+                "pisPasep": null,
+                "dtEmissaoPisPasep": null
+            },
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Felice Trenhago, 148, QUADRA 09 - LOTE 36. - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.865",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107819,
+            "codigo": 10,
+            "nome": "SUCESSÃO DE ALDA BATTU PEREIRA",
+            "nomeSemEspolio": "SUCESSÃO DE ALDA BATTU PEREIRA",
+            "cpfCnpj": "02793717053",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107819,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": {
+                "id": 21107819,
+                "nroRg": "426853333222",
+                "orgaoEmissorRg": null,
+                "dtEmissaoRg": null,
+                "estadoRg": null,
+                "nroRic": null,
+                "orgaoEmissorRic": null,
+                "dtEmissaoRic": null,
+                "estadoRic": null,
+                "pisPasep": null,
+                "dtEmissaoPisPasep": null
+            },
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Ernestina da Costa, S/Nº, QUADRA 07 - LOTE 30. - Centro - SEDE - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.875",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107820,
+            "codigo": 11,
+            "nome": "SUCESSÃO ALDORI BATTU PEREIRA",
+            "nomeSemEspolio": "SUCESSÃO ALDORI BATTU PEREIRA",
+            "cpfCnpj": "06403662015",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107820,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Não informada, Rua : INTERIOR - ANEXO \"B\" - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.886",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107821,
+            "codigo": 12,
+            "nome": "SUCESSÃO DE AMANDIO DE SOUSA MARTINS",
+            "nomeSemEspolio": "SUCESSÃO DE AMANDIO DE SOUSA MARTINS",
+            "cpfCnpj": "27261999091",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107821,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": "1938-07-08",
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": {
+                "id": 21107821,
+                "nroRg": "4022794147",
+                "orgaoEmissorRg": null,
+                "dtEmissaoRg": null,
+                "estadoRg": null,
+                "nroRic": null,
+                "orgaoEmissorRic": null,
+                "dtEmissaoRic": null,
+                "estadoRic": null,
+                "pisPasep": null,
+                "dtEmissaoPisPasep": null
+            },
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Carlos Alfredo Falkemberg, S/Nº, QUADRA P - LOTE 258 - Centro - SEDE - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.895",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107822,
+            "codigo": 14,
+            "nome": "ANELIO BARBOSA MARTINS",
+            "nomeSemEspolio": "ANELIO BARBOSA MARTINS",
+            "cpfCnpj": "04707800025",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107822,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Dormario Battu Pereira, 414, QUADRA 10 - LOTE 240. - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.936",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107823,
+            "codigo": 15,
+            "nome": "ANTONIO DE OLIVEIRA PARANHOS",
+            "nomeSemEspolio": "ANTONIO DE OLIVEIRA PARANHOS",
+            "cpfCnpj": "35841990004",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107823,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Palmena de Souza, 507, QUADRA 09 - LOTE 179. - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.947",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107824,
+            "codigo": 16,
+            "nome": "SUCESSÃO DE ANTONIO DE SOUZA",
+            "nomeSemEspolio": "SUCESSÃO DE ANTONIO DE SOUZA",
+            "cpfCnpj": "07275935015",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107824,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Avenida Heraclides De Lima Gomes, 2575, Casa - Centro - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.967",
+            "email": null,
+            "telefone": "5536131048"
+        },
+        {
+            "id": 21107825,
+            "codigo": 17,
+            "nome": "ANTONIO FELIPE SCHWADE",
+            "nomeSemEspolio": "ANTONIO FELIPE SCHWADE",
+            "cpfCnpj": "27401464004",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107825,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Não informada, INTERIOR - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:09.979",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107826,
+            "codigo": 18,
+            "nome": "ANTONIO LEAL DE MEDEIROS",
+            "nomeSemEspolio": "ANTONIO LEAL DE MEDEIROS",
+            "cpfCnpj": "10390928020",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107826,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Não informada, Rua : INTERIOR - ANEXO \"A\" - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:10.046",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21108869,
+            "codigo": 19,
+            "nome": "ANTONIO RIBEIRO TECHIO",
+            "nomeSemEspolio": "ANTONIO RIBEIRO TECHIO",
+            "cpfCnpj": null,
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21108869,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": null,
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Não informada - Migração Desktop para Cloud",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:21.091",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107827,
+            "codigo": 20,
+            "nome": "ANTONIO WILGES DA ROSA",
+            "nomeSemEspolio": "ANTONIO WILGES DA ROSA",
+            "cpfCnpj": "09095519015",
+            "inscricaoMunicipal": "290",
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107827,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": "1946-05-25",
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": {
+                "id": 21107827,
+                "nroRg": "4043969916",
+                "orgaoEmissorRg": null,
+                "dtEmissaoRg": null,
+                "estadoRg": null,
+                "nroRic": null,
+                "orgaoEmissorRic": null,
+                "dtEmissaoRic": null,
+                "estadoRic": null,
+                "pisPasep": null,
+                "dtEmissaoPisPasep": null
+            },
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Palmena de Souza, 147, LOTE 15 - QUADRA D OU 4 - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:10.059",
+            "email": null,
+            "telefone": null
+        },
+        {
+            "id": 21107828,
+            "codigo": 21,
+            "nome": "ANUAR ELIAS HASAN",
+            "nomeSemEspolio": "ANUAR ELIAS HASAN",
+            "cpfCnpj": "42414628049",
+            "inscricaoMunicipal": null,
+            "nomeFantasia": null,
+            "contribuinteEstrangeiro": null,
+            "pessoaFisica": {
+                "id": 21107828,
+                "pais": null,
+                "municipio": null,
+                "naturalizado": null,
+                "sexo": {
+                    "descricao": "Masculino",
+                    "valor": "MASCULINO"
+                },
+                "estadoCivil": {
+                    "descricao": "Solteiro",
+                    "valor": "SOLTEIRO"
+                },
+                "dtNascimento": null,
+                "dtObito": null
+            },
+            "pessoaFisicaDocumentos": {
+                "id": 21107828,
+                "nroRg": "4043962147",
+                "orgaoEmissorRg": null,
+                "dtEmissaoRg": null,
+                "estadoRg": null,
+                "nroRic": null,
+                "orgaoEmissorRic": null,
+                "dtEmissaoRic": null,
+                "estadoRic": null,
+                "pisPasep": null,
+                "dtEmissaoPisPasep": null
+            },
+            "pessoaJuridica": null,
+            "site": null,
+            "situacao": {
+                "descricao": "Ativo",
+                "valor": "ATIVADO"
+            },
+            "tipoPessoa": {
+                "descricao": "Física",
+                "valor": "FISICA"
+            },
+            "optanteSimplesNacional": {
+                "descricao": "Não",
+                "valor": "NAO"
+            },
+            "enderecoPrincipalFormatado": "Rua Palmena de Souza, 293, QUADRA 06 - LOTE 26. - Migração Desktop para Cloud - 98120-000",
+            "createdBy": "revenda-36",
+            "createdIn": "2021-03-24T12:09:10.075",
+            "email": null,
+            "telefone": null
+        }
+    ]
+}

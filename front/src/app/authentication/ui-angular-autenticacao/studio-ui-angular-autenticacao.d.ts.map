@@ -1,0 +1,1 @@
+{"version":3,"file":"studio-ui-angular-autenticacao.d.ts","sources":["studio-ui-angular-autenticacao.d.ts"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","sourcesContent":["/**\n * Generated bundle index. Do not edit.\n */\nexport * from './public-api';\nexport { AutenticacaoRequestsInterceptor as ɵa } from './lib/autenticacao-requests.interceptor';\n"]}

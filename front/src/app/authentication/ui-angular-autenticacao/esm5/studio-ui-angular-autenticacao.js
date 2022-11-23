@@ -1,0 +1,10 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Generated bundle index. Do not edit.
+ */
+export { AutenticacaoModule, OAUTH_APPLICATION, AutenticacaoContextService, bethaOIDCProviderFactory } from './public-api';
+export { AutenticacaoRequestsInterceptor as ɵa } from './lib/autenticacao-requests.interceptor';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R1ZGlvLXVpLWFuZ3VsYXItYXV0ZW50aWNhY2FvLmpzIiwic291cmNlUm9vdCI6Im5nOi8vQHN0dWRpby91aS1hbmd1bGFyLWF1dGVudGljYWNhby8iLCJzb3VyY2VzIjpbInN0dWRpby11aS1hbmd1bGFyLWF1dGVudGljYWNhby50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBSUEsNEdBQWMsY0FBYyxDQUFDO0FBRTdCLE9BQU8sRUFBQywrQkFBK0IsSUFBSSxFQUFFLEVBQUMsTUFBTSx5Q0FBeUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogR2VuZXJhdGVkIGJ1bmRsZSBpbmRleC4gRG8gbm90IGVkaXQuXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9wdWJsaWMtYXBpJztcblxuZXhwb3J0IHtBdXRlbnRpY2FjYW9SZXF1ZXN0c0ludGVyY2VwdG9yIGFzIMm1YX0gZnJvbSAnLi9saWIvYXV0ZW50aWNhY2FvLXJlcXVlc3RzLmludGVyY2VwdG9yJzsiXX0=

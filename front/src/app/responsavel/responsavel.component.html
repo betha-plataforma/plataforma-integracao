@@ -1,0 +1,142 @@
+<div class="spinner-grow-backdrop" [class.loader-fadeout]="!loading">
+    <div class="spinner-grow"></div>
+</div>
+
+<div class="row align-items-center py-3">
+    <div class="col-auto" hidden>
+        <button class="btn btn-link" title="Voltar">
+            <i class="mdi mdi-arrow-left"></i>
+        </button>
+    </div>
+    <div class="col">
+        <h4 class="m-0">Responsáveis</h4>
+    </div>
+</div>
+
+<div class="row align-items-center">
+
+    <div class="col-12 col-lg-auto">
+        <div class="btn-group">
+            <button type="button" (click)="openModal()" class="btn btn-sm btn-success" >
+                <i class="mdi mdi-plus h6 m-0 mr-1" title="Adicionar"></i> Responsável
+            </button>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg">
+    </div>
+
+    <div class="col-12 col-lg-3">
+    </div>
+</div>
+
+<div *ngIf="responsaveis.length">
+    <div class="row mt-5 mb-0">
+        <div class="col-12">
+            <table class="table table-hover table-unbordered table-unstriped">
+                <thead>
+                    <tr>
+                        <th>
+                            RESPONSÁVEL
+                        </th>
+                        <th style="min-width: 200px;">
+                            CPF
+                        </th>
+                        <th style="min-width: 80px;">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let responsavel of responsaveis">
+                        <td>
+                            {{responsavel.nome}} 
+                        </td>
+                        <td>
+                            {{responsavel.cpf | cpfcnpj}}
+                        </td>
+                        <td class="text-right">
+                            <div ngbDropdown class="d-inline-block">
+                                <button class="btn btn-link" ngbDropdownToggle>
+                                    <i class="mdi mdi-dots-vertical"></i>
+                                </button>
+                                <div ngbDropdownMenu>
+                                    <button ngbDropdownItem (click)="openModal(responsavel)">
+                                        <i class="mdi mdi-pencil mr-2"></i>Editar
+                                    </button>
+                                    <div class="dropdown-divider"></div>
+                                    <button ngbDropdownItem (click)="removeModal(responsavel.id)">
+                                        <i class="mdi mdi-trash-can-outline mr-2"></i>Excluir
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row" *ngIf="!responsaveis.length && !loading">
+    <div class="col-md-12">
+        <bth-empty-state show registros-pesquisa></bth-empty-state>
+    </div>
+</div>
+
+
+
+
+<!-- Template da modal -->
+<ng-template #registerModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Adicionando responsável</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <form #responsavelForm="ngForm">
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-8">
+                    <label for="nomeInput" class="required">Nome</label>
+                    <input [(ngModel)]="responsavel.nome" required type="text" class="form-control" id="nomeInput" name="nomeInput" placeholder="Informe o nome" autocomplete="off">
+                </div>
+                <div class="col-4">
+                    <label for="cpfInput" class="required">CPF</label>
+                    <input [(ngModel)]="responsavel.cpf" required type="text" class="form-control" name="cpfInput" autocomplete="off">
+                </div>
+            </div>
+            <div *ngIf="error" class="row mt-2">
+                <div class="col-12">
+                    <ngb-alert type="danger" [dismissible]="false">{{error}}</ngb-alert>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button (click)="save()" [disabled]="!responsavelForm.form.valid" type="button" class="btn btn-primary mx-1">Salvar</button>
+            <button (click)="modal.dismiss()" type="button" class="btn btn-secondary mx-1">Cancelar</button>
+        </div>
+    </form>
+</ng-template>
+
+<ng-template #confirmModal let-confirmModal>
+    <div class="modal-header">
+        <h4 class="modal-title">Confirmar exclusão</h4>
+        <button type="button" class="close" aria-label="Close" (click)="confirmModal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-12">
+                Deseja realmente excluir o responsável.
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button (click)="delete()" type="button" class="btn btn-danger mx-1">Confirmar exclusão</button>
+        <button (click)="confirmModal.dismiss()" type="button" class="btn btn-secondary mx-1">Cancelar</button>
+    </div>
+</ng-template>

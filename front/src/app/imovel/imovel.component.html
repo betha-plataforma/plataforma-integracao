@@ -1,0 +1,110 @@
+<div class="spinner-grow-backdrop" [class.loader-fadeout]="!loading">
+    <div class="spinner-grow"></div>
+</div>
+
+<div class="row align-items-center py-3">
+    <div class="col-auto" hidden>
+        <button class="btn btn-link" title="Voltar">
+            <i class="mdi mdi-arrow-left"></i>
+        </button>
+    </div>
+    <div class="col">
+        <h4 class="m-0">Imóveis</h4>
+    </div>
+</div>
+
+<div class="row align-items-center">
+
+    <div class="col-12 col-lg text-lg-right my-3 my-lg-0">
+    </div>
+
+    <div class="col-12 col-lg-3">
+        <div class="input-group">
+            <input [(ngModel)]="term" (keyup.enter)="search()" class="form-control mb-0" type="search" placeholder="O que você está buscando?" autocomplete="off">
+            <div class="input-group-append">
+                <button (click)="search()" type="button" class="btn btn-sm btn-secondary">
+                    <i class="mdi mdi-magnify"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" *ngIf="tags && tags.length > 0">
+    <div class="col">
+        <span *ngFor="let tag of tags; let index = index" class="badge badge-secundary py-1 m-1">{{tag}}
+        <a class="mdi mdi-close ml-1" (click)="deleteTag(index)" title="Remover este critério de busca"></a></span>
+    </div>
+</div>
+
+<div *ngIf="imoveis.length">
+    <div class="row mt-5 mb-0">
+        <div class="col-12">
+            <table class="table table-hover table-unbordered table-unstriped">
+                <thead>
+                    <tr>
+                        <th style="min-width: 150px;">
+                            <i *ngIf="orderBy.field === 'inscricaoImobiliariaFormatada'" [ngClass]="(orderBy.sort === 'desc') ? 'mdi-arrow-down' : 'mdi-arrow-up' " class="mdi mr-1"></i>
+                            <a (click)="sort('inscricaoImobiliariaFormatada')">Inscrição</a>
+                        </th>
+                        <th style="min-width: 100px;">
+                            <i *ngIf="orderBy.field === 'tipoImovel'" [ngClass]="(orderBy.sort === 'desc') ? 'mdi-arrow-down' : 'mdi-arrow-up' " class="mdi mr-1"></i>
+                            <a (click)="sort('tipoImovel')">Tipo</a>
+                        </th>
+                        <th>
+                            ENDEREÇO
+                        </th>
+                        <th style="min-width: 300px;">
+                            <i *ngIf="orderBy.field === 'responsavel.nome'" [ngClass]="(orderBy.sort === 'desc') ? 'mdi-arrow-down' : 'mdi-arrow-up' " class="mdi mr-1"></i>
+                            <a (click)="sort('responsavel.nome')">Responsável</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let imovel of imoveis">
+                        <td>
+                            {{imovel.inscricaoImobiliariaFormatada}}
+                        </td>
+                        <td>
+                            {{imovel.tipoImovel.descricao}}
+                        </td>
+                        <td>
+                            <small class="text-muted">{{imovel.enderecoFormatado}}</small>
+                        </td>
+                        <td>
+                            <span *ngIf="!isVerificado" title="Visível somente para usuários verificados" class="badge badge-secundary py-2 w-75">
+                                <i class="mdi mdi-lock mx-auto"></i>
+                            </span>
+
+                            <div *ngIf="isVerificado">
+                                <p class="m-0">{{imovel.responsavel.nome}}</p>
+                                <p class="m-0 small text-muted">{{imovel.responsavel.cpfCnpj | cpfcnpj}}</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <nav class="pb-5">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item">
+                      <button (click)="prevPage()" [disabled]="paginationControl.page === 1" class="btn btn-secondary"><i class="mdi mdi-chevron-left mr-1"></i>ANTERIOR</button>
+                    </li>
+                    <li class="page-item">
+                      <button (click)="nextPage()" [disabled]="!this.paginationControl.hasNext" class="btn btn-secondary">PRÓXIMA<i class="mdi mdi-chevron-right ml-1"></i></button>
+                    </li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+</div>
+
+<div class="row" *ngIf="!imoveis.length && tags.length > 0">
+    <div class="col-md-12">
+        <bth-empty-state show registros-pesquisa></bth-empty-state>
+    </div>
+</div>

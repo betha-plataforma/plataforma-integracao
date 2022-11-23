@@ -1,0 +1,1 @@
+{"version":3,"file":"autenticacao.module.d.ts","sources":["autenticacao.module.d.ts"],"names":[],"mappings":";;AAAA;;;AACA","sourcesContent":["export declare class AutenticacaoModule {\n}\n"]}
