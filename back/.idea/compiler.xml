@@ -7,9 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo-bethacon" />
         <module name="aws_billing" />
         <module name="plafatorma-integracao" />
-        <module name="back" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="aws_billing" options="-parameters" />
       <module name="back" options="-parameters" />
+      <module name="demo-bethacon" options="-parameters" />
       <module name="plafatorma-integracao" options="-parameters" />
     </option>
   </component>

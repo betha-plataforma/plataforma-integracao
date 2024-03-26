@@ -3,7 +3,7 @@ spring:
     cache: false
   data:
     mongodb:
-      uri: "conexão banco"
+      uri: "mongodb://rootuser:rootpass@localhost:27018/plataforma-integracao?authSource=admin"
 
 betha:
   auth:
@@ -14,9 +14,9 @@ betha:
         redirect: "http://localhost:8080/callback"
         scopes: "contas-usuarios.suite,user-accounts.suite"
   services:
-    login: "https://service-login.cloud.betha.com.br/servicelogin"
-    oauth: "https://oauth.cloud.betha.com.br/auth/oauth2"
-    usuarios: "https://useraccounts.cloud.betha.com.br/user-accounts/v0.1/api"
+    login: "https://login.betha.cloud/servicelogin"
+    oauth: "https://plataforma-oauth.betha.cloud/auth/oauth2"
+    usuarios: "https://plataforma-autorizacoes.betha.cloud/user-accounts/v0.1/api"
   tributos:
     url: "https://tributos.suite.betha.cloud/dados/v1/"
     accessToken: "Bearer xxxxxxxxxxxxxxxxxxxxxxxx"

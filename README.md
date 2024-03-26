@@ -35,10 +35,14 @@ principalmente por grandes players de plataforma, provendo acesso aos seus recur
 ![](back/doc/img/cadastrounico.png)
 
 ## Executando a aplicação
+
+**Dependencias**
 - Java 8 (ou superior)
 - Maven 3.5.4 (ou superior)
 
-No terminal, executar o comando: ```mvn spring-boot:run```
+**Passo a passo**
+- Entrar na pasta docker e executar o `comando docker-compose up -d`
+- No terminal, executar o comando: ```mvn spring-boot:run```
 
 
 <br><br><br>

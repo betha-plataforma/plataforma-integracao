@@ -151,5 +151,8 @@
       }
     }
   },
-  "defaultProject": "showcase-angular"
+  "defaultProject": "showcase-angular",
+  "cli": {
+    "analytics": false
+  }
 }
