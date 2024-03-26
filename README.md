@@ -41,7 +41,7 @@ principalmente por grandes players de plataforma, provendo acesso aos seus recur
 - Maven 3.5.4 (ou superior)
 
 **Passo a passo**
-- Entrar na pasta docker e executar o `comando docker-compose up -d`
+- Entrar na pasta docker e executar o comando `docker-compose up -d`
 - No terminal, executar o comando: ```mvn spring-boot:run```
 
 
