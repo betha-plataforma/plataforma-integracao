@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.betha.plataforma.bethacon.AwsBillingTsdbApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.565 s - in com.betha.plataforma.bethacon.AwsBillingTsdbApplicationTests

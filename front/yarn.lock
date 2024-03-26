@@ -1203,9 +1203,9 @@
     "@mdi/font" "~5.0.45"
 
 "@betha-plataforma/oauth@~1.0.6":
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/@betha-plataforma/oauth/-/oauth-1.0.4.tgz#fe4cc90f1038b09de02182ae1dc61eec5a177c7f"
-  integrity sha512-KUPscCYgtiw0Cm6V8+J9ELj1B8iDWOO6iXDSBNFQQ0/6XVARK+0Kh2Gu1rbwXfM7E0vo8qkPnKPveKkeuGio5g==
+  version "1.0.6"
+  resolved "http://nexus3.betha.com.br/repository/npm-all/@betha-plataforma/oauth/-/oauth-1.0.6.tgz#dd988fc39ffdcb37584175690519a1db382044d6"
+  integrity sha512-XNvTIUE8OJQ85lthDl7Eu4xaH8HdF4uGAQTKuc5puZd5E4ML3luFL2cKi0VEAb400ML+v6vZAGG9EKNhewr0NA==
   dependencies:
     js-cookie "^2.2.0"
     qs "6.5.2"
