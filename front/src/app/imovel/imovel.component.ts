@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImovelService } from './imovel.service';
-import {AutenticacaoContextService} from '../authentication/ui-angular-autenticacao';
+import { SessionService } from '../session/session.service';
 
 @Component({
   selector: 'app-imovel',
@@ -21,15 +21,15 @@ export class ImovelComponent implements OnInit {
 
   constructor(
     private imovelService: ImovelService,
-    private autenticacaoContextService: AutenticacaoContextService,
+    private sessionService: SessionService,
   ) { }
 
   ngOnInit() {
 
     this.getData();
 
-    this.autenticacaoContextService.getInformacaoUsuario().subscribe(usuario => {
-      this.imovelService.isVerificado(usuario.id).then(data => {
+    this.sessionService.ready().then(session => {
+      this.imovelService.isVerificado(session.user.id).then(data => {
         this.isVerificado = data.userVerified;
       });
     });

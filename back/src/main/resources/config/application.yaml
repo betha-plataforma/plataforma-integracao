@@ -5,22 +5,40 @@ spring:
     mongodb:
       uri: "mongodb://rootuser:rootpass@localhost:27018/plataforma-integracao?authSource=admin"
 
+server:
+  forward-headers-strategy: native
+  servlet:
+    session:
+      cookie:
+        name: "${BETHA_SESSION_COOKIE_NAME:PLATAFORMA_INTEGRACAO_SESSION}"
+        http-only: true
+        same-site: lax
+
 betha:
   auth:
     oauth:
       client:
-        id: "xxxxxxxxxxxxxxxxx"
-        secret_id: "xxxxxxxxxxxxx"
-        redirect: "http://localhost:8080/callback"
-        scopes: "contas-usuarios.suite,user-accounts.suite"
+        id: "${BETHA_CLIENT_ID:ef03519d-f2da-431a-b786-abfe8beee5d1}"
+        secret: "${BETHA_CLIENT_SECRET:877424bd-30db-46e0-8e98-c58fe97a79e5}"
+        callback: "${BETHA_CALLBACK_URL:http://localhost:8080/callback}"
+        redirect: "${BETHA_APP_URL:http://localhost:4200}"
+        logout-continue: "${BETHA_LOGOUT_CONTINUE_URL:http://localhost:4200/login}"
+        scopes: "${BETHA_OAUTH_SCOPES:contas-usuarios.suite,user-accounts.suite,autorizacoes.plataforma.betha.cloud/parceiro.leitura}"
+  system:
+    id: "${BETHA_SYSTEM_ID:320}"
   services:
-    login: "https://login.betha.cloud/servicelogin"
-    oauth: "https://plataforma-oauth.betha.cloud/auth/oauth2"
-    usuarios: "https://plataforma-autorizacoes.betha.cloud/user-accounts/v0.1/api"
+    login: "${BETHA_LOGIN_URL:https://login.test.betha.cloud/servicelogin}"
+    oauth: "${BETHA_OAUTH_URL:https://plataforma-oauth.test.betha.cloud/auth/oauth2}"
+    users: "${BETHA_USERS_URL:https://plataforma-usuarios.test.betha.cloud/usuarios/v0.1/api/usuarios/}"
+    user-accounts: "${BETHA_USER_ACCOUNTS_URL:https://plataforma-autorizacoes.test.betha.cloud/user-accounts/v0.1/api}"
+    sessions: "${BETHA_SESSOES_URL:https://plataforma-autorizacoes-sessoes.test.betha.cloud/user-accounts/v0.1/sessions/api}"
+    manager: "${BETHA_GERENCIADOR_AUTORIZACOES_URL:https://gerenciador-autorizacoes.test.plataforma.betha.cloud}"
+    notifications: "${BETHA_NOTIFICACOES_URL:https://plataforma-notificacoes.test.betha.cloud/notifications}"
+    notifications-ws: "${BETHA_NOTIFICACOES_WS_URL:wss://plataforma-notificacoes.test.betha.cloud/notifications/v2/channel}"
   tributos:
-    url: "https://tributos.suite.betha.cloud/dados/v1/"
-    accessToken: "Bearer xxxxxxxxxxxxxxxxxxxxxxxx"
-    userAccess: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    url: "https://tributos.test.suite.betha.cloud/parceiros/v1/"
+    accessToken: "Bearer bd81898e-6a1d-4bf1-afec-8d067fb49b2f"
+    userAccess: "4D1W9TLy4_BGBuNY5fyBfssdO-airEMuTM-XTUG0UdU="
   cadastro-unico:
     url: "https://plataforma-cadastro-unico.betha.cloud/api/v2/"
     accessToken: "xxxx"

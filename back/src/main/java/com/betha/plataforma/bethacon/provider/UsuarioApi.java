@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Map;
 
-@FeignClient(name = "usuario", url = "https://plataforma-usuarios.betha.cloud/usuarios/v0.1/api/usuarios/")
+@FeignClient(name = "usuario", url = "${betha.services.users}")
 public interface UsuarioApi {
     @RequestMapping(method = RequestMethod.GET, path = "{usuarioId}/verified")
     Map<String, Boolean> isUsuarioVerificado(@RequestHeader Map<String, String> headerMap,

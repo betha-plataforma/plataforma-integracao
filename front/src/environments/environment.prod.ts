@@ -1,10 +1,7 @@
 export const environment = {
   production: true,
-  authentication: {
-    scope: '',
-    clientId: 'xxxxxxxxx'
-  },
   api: {
-    url: 'https://localhost:8080/api/v1'
+    // Relativo: o frontend e o backend (BFF) devem ser servidos na mesma origem.
+    url: '/api/v1'
   }
 };

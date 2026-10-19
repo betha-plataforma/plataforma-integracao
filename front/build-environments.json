@@ -1,8 +1,0 @@
-{
-  "production": {
-    "envjs": "https://variaveis.plataforma.betha.cloud/env.js"
-  },
-  "local": {
-    "envjs": "https://variaveis.plataforma.betha.cloud/env.js"
-  }
-}
