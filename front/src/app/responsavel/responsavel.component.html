@@ -17,7 +17,7 @@
 
     <div class="col-12 col-lg-auto">
         <div class="btn-group">
-            <button type="button" (click)="openModal()" class="btn btn-sm btn-success" >
+            <button *ngIf="podeIncluir()" type="button" (click)="openModal()" class="btn btn-sm btn-success" >
                 <i class="mdi mdi-plus h6 m-0 mr-1" title="Adicionar"></i> Responsável
             </button>
         </div>
@@ -60,11 +60,11 @@
                                     <i class="mdi mdi-dots-vertical"></i>
                                 </button>
                                 <div ngbDropdownMenu>
-                                    <button ngbDropdownItem (click)="openModal(responsavel)">
+                                    <button *ngIf="podeAlterar()" ngbDropdownItem (click)="openModal(responsavel)">
                                         <i class="mdi mdi-pencil mr-2"></i>Editar
                                     </button>
                                     <div class="dropdown-divider"></div>
-                                    <button ngbDropdownItem (click)="removeModal(responsavel.id)">
+                                    <button *ngIf="podeExcluir()" ngbDropdownItem (click)="removeModal(responsavel.id)">
                                         <i class="mdi mdi-trash-can-outline mr-2"></i>Excluir
                                     </button>
                                 </div>

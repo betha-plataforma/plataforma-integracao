@@ -1,10 +1,7 @@
 export const environment = {
   production: false,
-  authentication: {
-    scope: 'user-accounts.suite,contas-usuarios.suite',
-    clientId: '55a5f16f-99fa-4e53-9c50-5ebf45447d1d'
-  },
   api: {
-    url: 'http://localhost:8080/api/v1'
+    // Relativo: o frontend e o backend (BFF) são servidos na mesma origem (proxy.conf.json em desenvolvimento).
+    url: '/api/v1'
   }
 };

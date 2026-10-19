@@ -4,25 +4,18 @@ import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.io.Serializable;
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.temporal.ChronoUnit;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class OauthToken implements Serializable {
 
-    public static final OauthToken EMPTY = new OauthToken();
+    private static final long serialVersionUID = 1L;
+    private static final long EXPIRATION_SKEW_SECONDS = 30;
 
-    private static final long EXPIRATION_TIME_IN_HOURS = 1;
-
-    private long expires;
+    private long issuedAt;
 
     private String scope;
 
     private String user;
-
-    private boolean expired;
 
     @JsonAlias(value = "access_token")
     private String accessToken;
@@ -35,14 +28,6 @@ public class OauthToken implements Serializable {
 
     @JsonAlias(value = "expires_in")
     private long expiresIn;
-
-    public long getExpires() {
-        return expires;
-    }
-
-    public void setExpires(long expires) {
-        this.expires = expires;
-    }
 
     public String getScope() {
         return scope;
@@ -58,14 +43,6 @@ public class OauthToken implements Serializable {
 
     public void setUser(String user) {
         this.user = user;
-    }
-
-    public boolean isExpired() {
-        return expired;
-    }
-
-    public void setExpired(boolean expired) {
-        this.expired = expired;
     }
 
     public String getAccessToken() {
@@ -101,16 +78,18 @@ public class OauthToken implements Serializable {
     }
 
     public boolean expired() {
-        return expired(getExpires());
+        if (issuedAt <= 0 || expiresIn <= 0) {
+            return true;
+        }
+        final long expiration = issuedAt + Math.max(0, expiresIn - EXPIRATION_SKEW_SECONDS) * 1000;
+        return System.currentTimeMillis() >= expiration;
     }
 
-    public static boolean expired(long mills) {
-        return ChronoUnit.HOURS.between(LocalDateTime.ofInstant(Instant.ofEpochMilli(mills),
-                ZoneId.systemDefault()), LocalDateTime.now()) >= EXPIRATION_TIME_IN_HOURS;
+    public void markIssuedNow() {
+        this.issuedAt = System.currentTimeMillis();
     }
 
-    boolean isValid() {
-        return getUser() != null && getAccessToken() != null && getRefreshToken() != null && getScope() != null;
+    public boolean isValid() {
+        return getAccessToken() != null && !getAccessToken().trim().isEmpty();
     }
-
 }

@@ -1,0 +1,48 @@
+<div class="spinner-grow-backdrop" [class.loader-fadeout]="!loading">
+    <div class="spinner-grow"></div>
+</div>
+
+<div class="row align-items-center py-3">
+    <div class="col">
+        <h4 class="m-0">Suporte técnico</h4>
+    </div>
+</div>
+
+<div class="alert alert-info">
+    Consulta somente leitura dos acessos ao contexto atual. Não concede, altera ou remove acessos.
+</div>
+
+<div *ngIf="error" class="row">
+    <div class="col-12">
+        <ngb-alert type="danger" [dismissible]="false">{{error}}</ngb-alert>
+    </div>
+</div>
+
+<div *ngIf="!error && acessos.length">
+    <div class="row mt-3 mb-0">
+        <div class="col-12">
+            <table class="table table-hover table-unbordered table-unstriped">
+                <thead>
+                    <tr>
+                        <th>USUÁRIO</th>
+                        <th style="min-width: 150px;">ADMINISTRADOR</th>
+                        <th style="min-width: 150px;">TÉCNICO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let acesso of acessos">
+                        <td>{{usuario(acesso)}}</td>
+                        <td>{{acesso.admin ? 'Sim' : 'Não'}}</td>
+                        <td>{{acesso.technical ? 'Sim' : 'Não'}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row" *ngIf="!error && !acessos.length && !loading">
+    <div class="col-md-12">
+        <bth-empty-state show></bth-empty-state>
+    </div>
+</div>

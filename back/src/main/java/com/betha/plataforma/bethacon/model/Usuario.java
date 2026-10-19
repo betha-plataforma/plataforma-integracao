@@ -6,6 +6,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Usuario {
 
+    private String id;
+
+    private String user;
+
     @JsonAlias("name")
     private String nome;
 
@@ -19,12 +23,31 @@ public class Usuario {
     @JsonAlias("photo")
     private String foto;
 
+    public Usuario() {
+    }
+
     public Usuario(String nome, String email, String cpf, String celular, String foto) {
         this.nome = nome;
         this.email = email;
         this.cpf = cpf;
         this.celular = celular;
         this.foto = foto;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public String getNome() {
@@ -70,7 +93,9 @@ public class Usuario {
     @Override
     public String toString() {
         return "Usuario{" +
-                "nome='" + nome + '\'' +
+                "id='" + id + '\'' +
+                ", user='" + user + '\'' +
+                ", nome='" + nome + '\'' +
                 ", email='" + email + '\'' +
                 ", cpf='" + cpf + '\'' +
                 ", celular='" + celular + '\'' +

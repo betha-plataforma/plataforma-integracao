@@ -11,11 +11,11 @@ import java.util.Map;
 
 @Service
 public class RequestService {
-    @Value("Bearer xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx")
+    @Value("${betha.tributos.accessToken}")
     private String accessToken;
 
     //O userAccess será dinâmico, podendo ser armazenado no banco, conforme cada cliente
-    @Value("xxxxxxxxxxxxxxxxx")
+    @Value("${betha.tributos.userAccess}")
     private String userAccess;
 
     private final ObjectMapper mapper;
