@@ -1,0 +1,114 @@
+[
+  {
+    "contexts": [
+      "database",
+      "entity"
+    ],
+    "constraints": [
+      {
+        "id": "ResponsavelPage",
+        "description": "Cadastro de responsáveis",
+        "resources": [
+          {
+            "urlPattern": "/api/v1/responsavel",
+            "methods": [
+              "GET"
+            ]
+          },
+          {
+            "urlPattern": "/api/v1/responsavel/.*",
+            "methods": [
+              "GET"
+            ]
+          },
+          {
+            "accessControll": "create",
+            "urlPattern": "/api/v1/responsavel",
+            "methods": [
+              "POST"
+            ]
+          },
+          {
+            "accessControll": "edit",
+            "urlPattern": "/api/v1/responsavel/.*",
+            "methods": [
+              "PUT"
+            ]
+          },
+          {
+            "accessControll": "delete",
+            "urlPattern": "/api/v1/responsavel/.*",
+            "methods": [
+              "DELETE"
+            ]
+          }
+        ],
+        "accessControll": [
+          {
+            "id": "create",
+            "description": "Incluir responsáveis"
+          },
+          {
+            "id": "edit",
+            "description": "Alterar responsáveis"
+          },
+          {
+            "id": "delete",
+            "description": "Excluir responsáveis"
+          }
+        ]
+      },
+      {
+        "id": "ImovelPage",
+        "description": "Consulta de imóveis",
+        "resources": [
+          {
+            "urlPattern": "/api/v1/imovel",
+            "methods": [
+              "GET"
+            ]
+          },
+          {
+            "urlPattern": "/api/v1/usuario/[^/]+/verified",
+            "methods": [
+              "GET"
+            ]
+          }
+        ],
+        "accessControll": []
+      },
+      {
+        "id": "ContribuintePage",
+        "description": "Consulta de contribuintes",
+        "resources": [
+          {
+            "urlPattern": "/api/v1/contribuinte",
+            "methods": [
+              "GET"
+            ]
+          }
+        ],
+        "accessControll": []
+      }
+    ],
+    "resources": [
+      {
+        "urlPattern": "/api/.*",
+        "methods": [
+          "OPTIONS"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "description": "Integrações de demonstração",
+        "constraints": [
+          "ResponsavelPage",
+          "ImovelPage",
+          "ContribuintePage"
+        ],
+        "groups": []
+      }
+    ]
+  }
+]

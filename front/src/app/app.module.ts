@@ -7,8 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import {oAuthApplication} from './authentication/oauth-application';
-import {AutenticacaoModule, OAUTH_APPLICATION} from './authentication/ui-angular-autenticacao';
+import { SessionErrorInterceptor } from './session/session-error.interceptor';
 
 import { CpfCnpjPipe } from '../pipes/cpfcnpj.pipe';
 import { PhonePipe } from '../pipes/phone.pipe';
@@ -20,28 +19,31 @@ import { ImovelService } from './imovel/imovel.service';
 import { ContribuinteComponent } from './contribuinte/contribuinte.component';
 import { ContribuinteService } from './contribuinte/contribuinte.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SuporteTecnicoComponent } from './suporte-tecnico/suporte-tecnico.component';
+import { SemPermissaoComponent } from './sem-permissao/sem-permissao.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
     CpfCnpjPipe,
-    PhonePipe, 
-    ResponsavelComponent, 
+    PhonePipe,
+    ResponsavelComponent,
     ImovelComponent,
     ContribuinteComponent,
     DashboardComponent,
+    SuporteTecnicoComponent,
+    SemPermissaoComponent,
   ],
   imports: [
     HttpClientModule,
-    AutenticacaoModule,
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     NgbModule,
     FormsModule],
   providers: [
-    {provide: OAUTH_APPLICATION, useValue: oAuthApplication},
+    {provide: HTTP_INTERCEPTORS, useClass: SessionErrorInterceptor, multi: true},
     ResponsavelService,
     ContribuinteService,
     ImovelService

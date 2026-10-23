@@ -1,0 +1,46 @@
+.integration-overlay {
+  align-items: center;
+  background: rgba(247, 249, 252, .98);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 24px;
+  position: fixed;
+  z-index: 10000;
+}
+
+.integration-overlay[hidden] {
+  display: none;
+}
+
+.integration-card {
+  background: #fff;
+  border: 1px solid #dce3eb;
+  border-radius: 6px;
+  box-shadow: 0 8px 32px rgba(36, 54, 72, .15);
+  max-height: calc(100vh - 48px);
+  max-width: 680px;
+  overflow: auto;
+  padding: 24px;
+  width: 100%;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.integration-message {
+  white-space: pre-line;
+}
+
+.integration-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.integration-error {
+  color: #b42318;
+  margin-top: 12px;
+}

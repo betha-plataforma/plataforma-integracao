@@ -1,15 +1,57 @@
 <bth-app #app>
-  
-  <bth-marca-produto slot="menu_marca_produto" produto="App Bethacon" exibir-produtos #marcaProduto> </bth-marca-produto>
+
+  <bth-marca-produto slot="menu_marca_produto" produto="App Bethacon" #marcaProduto> </bth-marca-produto>
 
   <bth-utilitarios slot="menu_ferramentas" #utilitarios></bth-utilitarios>
   <!-- <bth-ajuda slot="menu_ferramentas"></bth-ajuda> -->
   <!-- <bth-novidades slot="menu_ferramentas" #novidades></bth-novidades> -->
   <bth-notificacoes slot="menu_ferramentas" #notificacoes></bth-notificacoes>
-  <bth-conta-usuario slot="menu_ferramentas" usuario="lorem.ipsum" nome="Lorem Ipsum" foto-url="https://placeimg.com/80/80/animals" #contaUsuario> </bth-conta-usuario>
+  <bth-conta-usuario slot="menu_ferramentas" #contaUsuario> </bth-conta-usuario>
 
   <main slot="container_aplicacao" class="container-fluid mt-2">
     <router-outlet></router-outlet>
   </main>
 
 </bth-app>
+
+<section class="integration-overlay" *ngIf="estado === 'carregando'">
+  <div class="integration-card">
+    <h2>Carregando acesso</h2>
+    <p>Consultando usuário, entidades e permissões na Plataforma Betha.</p>
+  </div>
+</section>
+
+<!-- [hidden] em vez de *ngIf: o elemento precisa existir para receber buscar/selecionar. -->
+<section class="integration-overlay" [hidden]="estado !== 'contexto'">
+  <div class="integration-card">
+    <bth-selecao-contexto #selecaoContexto placeholder-pesquisa="Qual entidade você está buscando?">
+      <h2 slot="cabecalho">Selecione a entidade que deseja acessar</h2>
+      <p slot="sem_resultado">Nenhum acesso válido foi encontrado para este sistema.</p>
+    </bth-selecao-contexto>
+  </div>
+</section>
+
+<section class="integration-overlay" *ngIf="estado === 'restricao' || estado === 'termo'">
+  <div class="integration-card">
+    <h2>{{ estado === 'termo' ? 'Termo de responsabilidade' : (restricaoFechavel ? 'Operação não permitida' : 'Acesso indisponível') }}</h2>
+    <div class="integration-message">{{ mensagemRestricao }}</div>
+
+    <div class="form-check mt-3" *ngIf="estado === 'termo'">
+      <input class="form-check-input" type="checkbox" id="termoAceito" name="termoAceito" [(ngModel)]="termoAceito">
+      <label class="form-check-label" for="termoAceito">Li e aceito o termo de responsabilidade.</label>
+    </div>
+
+    <p class="integration-error" *ngIf="erroRestricao">{{ erroRestricao }}</p>
+
+    <div class="integration-actions">
+      <button type="button" class="btn btn-secondary" *ngIf="restricaoFechavel" (click)="fecharRestricao()">Fechar</button>
+      <ng-container *ngIf="!restricaoFechavel">
+        <button type="button" class="btn btn-secondary" *ngIf="podeTrocarEntidade()" (click)="trocarEntidade()">Selecionar outra entidade</button>
+        <button type="button" class="btn btn-secondary" *ngIf="urlCentralUsuario()" (click)="abrirCentralUsuario()">Abrir Central do Usuário</button>
+        <button type="button" class="btn btn-secondary" (click)="novoLogin()">Fazer novo login</button>
+      </ng-container>
+      <button type="button" class="btn btn-primary" *ngIf="estado === 'termo'"
+              [disabled]="!termoAceito || aceitandoTermo" (click)="aceitarTermo()">Concluir e acessar</button>
+    </div>
+  </div>
+</section>

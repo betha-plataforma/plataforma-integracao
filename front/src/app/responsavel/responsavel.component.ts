@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { ResponsavelService } from "./responsavel.service";
+import { SessionService } from '../session/session.service';
 
 @Component({
   selector: 'app-resposavel',
@@ -19,8 +20,22 @@ export class ResponsavelComponent implements OnInit {
 
   constructor(
     private modalService: NgbModal,
-    private responsavelService: ResponsavelService
+    private responsavelService: ResponsavelService,
+    private sessionService: SessionService
     ) { }
+
+  // Permissões do Gerenciador de Acessos (feedback visual; o backend valida novamente).
+  podeIncluir(): boolean {
+    return this.sessionService.can('responsavel', 'create');
+  }
+
+  podeAlterar(): boolean {
+    return this.sessionService.can('responsavel', 'edit');
+  }
+
+  podeExcluir(): boolean {
+    return this.sessionService.can('responsavel', 'delete');
+  }
 
   ngOnInit() {
 
