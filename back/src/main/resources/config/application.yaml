@@ -10,7 +10,7 @@ server:
   servlet:
     session:
       cookie:
-        name: "${BETHA_SESSION_COOKIE_NAME}"
+        name: "PLATAFORMA_INTEGRACAO_SESSION"
         http-only: true
         same-site: lax
 
@@ -18,23 +18,23 @@ betha:
   auth:
     oauth:
       client:
-        id: "${BETHA_CLIENT_ID}"
-        secret: "${BETHA_CLIENT_SECRET}"
-        callback: "${BETHA_CALLBACK_URL}"
-        redirect: "${BETHA_APP_URL}"
-        logout-continue: "${BETHA_LOGOUT_CONTINUE_URL}"
-        scopes: "${BETHA_OAUTH_SCOPES}"
+        id: "xxxxxxxxxxxxxxxxx"
+        secret: "xxxxxxxxxxxxx"
+        callback: "http://localhost:8080/callback"
+        redirect: "http://localhost:4200"
+        logout-continue: "http://localhost:4200/login"
+        scopes: "contas-usuarios.suite,user-accounts.suite,notifications.suite"
   system:
-    id: "${BETHA_SYSTEM_ID}"
+    id: 999
   services:
-    login: "${BETHA_LOGIN_URL}"
-    oauth: "${BETHA_OAUTH_URL}"
-    users: "${BETHA_USERS_URL}"
-    user-accounts: "${BETHA_USER_ACCOUNTS_URL}"
-    sessions: "${BETHA_SESSOES_URL}"
-    manager: "${BETHA_GERENCIADOR_AUTORIZACOES_URL}"
-    notifications: "${BETHA_NOTIFICACOES_URL}"
-    notifications-ws: "${BETHA_NOTIFICACOES_WS_URL}"
+    login: "https://login.betha.cloud/servicelogin"
+    oauth: "https://plataforma-oauth.betha.cloud/auth/oauth2"
+    user-accounts: "https://plataforma-autorizacoes.betha.cloud/user-accounts/v0.1/api"
+    users: "https://plataforma-usuarios.betha.cloud/usuarios/v0.1/api/usuarios/"
+    sessions: "https://plataforma-autorizacoes-sessoes.betha.cloud/user-accounts/v0.1/sessions/api"
+    manager: "https://gerenciador-autorizacoes.plataforma.betha.cloud"
+    notifications: "https://plataforma-notificacoes.betha.cloud/notifications"
+    notifications-ws: "wss://plataforma-notificacoes.betha.cloud/notifications/v2/channel"
   tributos:
     url: "https://tributos.suite.betha.cloud/dados/v1/"
     accessToken: "Bearer xxxxxxxxxxxxxxxxxxxxxxxx"

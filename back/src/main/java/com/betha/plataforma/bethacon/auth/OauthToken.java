@@ -78,7 +78,10 @@ public class OauthToken implements Serializable {
     }
 
     public boolean expired() {
-        if (issuedAt <= 0 || expiresIn <= 0) {
+        if (expiresIn == 0) {
+            return false;
+        }
+        if (issuedAt <= 0 || expiresIn < 0) {
             return true;
         }
         final long expiration = issuedAt + Math.max(0, expiresIn - EXPIRATION_SKEW_SECONDS) * 1000;

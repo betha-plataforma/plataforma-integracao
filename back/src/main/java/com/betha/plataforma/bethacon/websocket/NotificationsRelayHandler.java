@@ -23,11 +23,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/**
- * Relay do canal de notificações: o navegador conecta neste backend (autenticado pelo cookie de sessão)
- * e o backend abre a conexão com a Plataforma usando o token da sessão, repassando as mensagens nos dois
- * sentidos. Assim o bth-notificacoes funciona sem que o token chegue ao navegador.
- */
 @Component
 public class NotificationsRelayHandler extends TextWebSocketHandler {
 
@@ -71,8 +66,10 @@ public class NotificationsRelayHandler extends TextWebSocketHandler {
             Thread.currentThread().interrupt();
             closeQuietly(browserSession, CloseStatus.SERVER_ERROR);
         } catch (ExecutionException | TimeoutException e) {
-            // Ex.: token sem o escopo de notificações. 1011 não faz o componente reconectar em loop.
-            LOGGER.warn("Não foi possível conectar ao canal de notificações da Plataforma: {}", e.getMessage());
+            LOGGER.warn(
+                    "Não foi possível conectar ao canal de notificações da Plataforma ({})",
+                    e instanceof TimeoutException ? "tempo esgotado" : "falha no handshake"
+            );
             closeQuietly(browserSession, CloseStatus.SERVER_ERROR);
         }
     }
@@ -87,7 +84,7 @@ public class NotificationsRelayHandler extends TextWebSocketHandler {
 
     @Override
     public void handleTransportError(final WebSocketSession browserSession, final Throwable exception) {
-        LOGGER.debug("Falha no WebSocket de notificações do navegador: {}", exception.getMessage());
+        LOGGER.debug("Falha no WebSocket de notificações do navegador");
         closeQuietly(browserSession, CloseStatus.SERVER_ERROR);
     }
 
@@ -103,7 +100,7 @@ public class NotificationsRelayHandler extends TextWebSocketHandler {
         try {
             session.close(status);
         } catch (IOException e) {
-            LOGGER.debug("Falha ao fechar WebSocket de notificações: {}", e.getMessage());
+            LOGGER.debug("Falha ao fechar WebSocket de notificações");
         }
     }
 
@@ -124,8 +121,6 @@ public class NotificationsRelayHandler extends TextWebSocketHandler {
 
         @Override
         public void afterConnectionClosed(final WebSocketSession upstream, final CloseStatus status) {
-            // A Plataforma encerrou o canal (ex.: token expirado). GOING_AWAY (1001) faz o componente
-            // reconectar, passando por um novo handshake que obtém o token atualizado da sessão.
             LOGGER.debug("Canal de notificações da Plataforma encerrado: {}", status);
             closeQuietly(browser, CloseStatus.GOING_AWAY);
         }
